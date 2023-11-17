@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rock Paper Scissors Game</h1>
+  <label for="playerName">Enter Your Name: </label>
+  <input type="text" id="playerName" placeholder="Your Name">
+  <br>
+  <button onclick="playGame()">Play Game</button>
+  <p id="result"></p>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+
+  <!-- Your Firebase Config -->
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyDBVHm7v1SP-AeP-B9QZGoImZ3lzPicAsA",
+      authDomain: "rolloverroulette.firebaseapp.com",
+      projectId: "rolloverroulette",
+      storageBucket: "rolloverroulette.appspot.com",
+      messagingSenderId: "504895229070",
+      appId: "1:504895229070:web:955c017ba3896e8bd48ddf"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- Your JavaScript Code -->
+  <script src="script.js"></script>
+</body>
+</html>
